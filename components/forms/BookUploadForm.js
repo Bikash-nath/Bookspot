@@ -77,7 +77,7 @@ function BookAddForm({
   }
 
   return (
-    <form enctype='multipart/form-data' method='post'>
+    <form>
       <div className='grid grid-cols-6 gap-x-6 gap-y-8'>
         <div className='col-span-6'>
           <label
