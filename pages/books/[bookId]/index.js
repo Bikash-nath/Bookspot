@@ -443,7 +443,7 @@ export async function getStaticPaths() {
 	}))
 
 	return {
-		paths: bookParams,
+		paths: bookParams || [],
 		fallback: true,
 	}
 }
