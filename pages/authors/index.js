@@ -57,7 +57,7 @@ export async function getStaticProps() {
 
 	return {
 		props: {
-			authors: authors.data,
+			authors: authors.data || [],
 		},
 		//for production
 	}
