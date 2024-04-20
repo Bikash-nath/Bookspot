@@ -214,8 +214,8 @@ function BookDetailPage(props) {
 							<p className='text-xl xl:text-2xl text-center xl:text-left font-medium'>{book.title}</p>
 						</div>
 						<div className='text-md md:text-lg text-center xl:text-left '>
-							<Link href={`/authors/${book.author.slug}`}>
-								By <p className='font-medium inline-block'>{book.author.name}</p>
+							<Link href={`/authors/${book?.author?.slug}`}>
+								By <p className='font-medium inline-block'>{book.author?.name}</p>
 								<div className='inline-block px-[2px] py-[1px]'>
 									<ChevronRightIcon dimensions='h-4 w-4' />
 								</div>
@@ -280,7 +280,7 @@ function BookDetailPage(props) {
 										<p className='text-sm font-light xl:text-md text-gray-300 py-1'>language</p>
 									</div>
 								)}
-								{book.format?.ebook.pagesCount !== 0 && book.format?.ebook.pagesCount && (
+								{book.format?.ebook.pagesCount !== 0 && book.format?.ebook?.pagesCount && (
 									<div className='flex flex-col justify-center items-center p-1 px-2 md:p-2 xl:p-3 w-full'>
 										<p className='px-4 text-sm md:text-base font-medium'>
 											{book.format.ebook.pagesCount}
